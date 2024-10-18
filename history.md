@@ -131,7 +131,7 @@ Change 8824: Subject: [PATCH t/TEST lib/Test/Harness.pm] Adding todo tests
     Message-ID: <20010218014850.C19957@magnonel.guild.net>
 ```
 
-### Version 12 (Current version)
+### Version 12
 Allowed header at end.
 
 Implemented in [Test::Harness](http://search.cpan.org/dist/Test-Harness/) 1.21.
@@ -140,3 +140,8 @@ Implemented in [Test::Harness](http://search.cpan.org/dist/Test-Harness/) 1.21.
 Understands TAP version syntax.
 
 Implemented in [TAP::Parser](http://search.cpan.org/dist/Test-Harness/lib/TAP/Parser.pm) 0.52.
+
+### Version 14 (Current version)
+Adds subtest test syntax.
+
+More precise specification of harness behavior across language runtimes.

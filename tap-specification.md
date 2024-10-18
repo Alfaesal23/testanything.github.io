@@ -3,6 +3,8 @@ layout: default
 title: TAP specification
 ---
 
+<!-- SPDX-License-Identifier: Artistic-1.0-Perl -->
+
 # NAME
 
 TAP - The Test Anything Protocol
@@ -382,12 +384,12 @@ http://search.cpan.org/dist/Apache-Test/
 
 (Geoffrey Young, April 17, 2006)
 
-### Java
+## Java
 tap4j provides objects to create TestSets, TestResults, BailOuts and, using a TapProducer, dump it into a java.io.File or String. It also provides TapConsumer's to load TapStreams from Strings or java.io.File's. YAMLish is interpreted and made available as diagnostics of each TestResult object of a TestSet.
 
--    [tap4j](http://www.tap4j.org)
--    [Example of a TapConsumer in Java with tap4j + YAMLish](http://tap4j.org/tap4j/tapconsumer.html)
--    [Example of a TapProducer in Java with tap4j + YAMLish](http://tap4j.org/tap4j/tapproducer.html)
+-    [tap4j](https://tupilabs.com/tap4j/tap4j/)
+-    [Example of a TapConsumer in Java with tap4j + YAMLish](https://tupilabs.com/tap4j/tap4j/tapconsumer.html)
+-    [Example of a TapProducer in Java with tap4j + YAMLish](https://tupilabs.com/tap4j/tap4j/tapproducer.html)
 
 tap4j is licensed under MIT License.
 
@@ -427,7 +429,7 @@ The basis for the TAP format was created by Larry Wall in the original test scri
 
 Copyright 2003-2006 by Michael G Schwern <schwern@pobox.com>, Andy Lester <andy@petdance.com>.
 This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
-See [http://www.perl.com/perl/misc/artistic.html](http://www.perl.com/perl/misc/artistic.html).
+See [https://spdx.org/licenses/Artistic-1.0-Perl.html](https://spdx.org/licenses/Artistic-1.0-Perl.html).
 
 ## TODO
 

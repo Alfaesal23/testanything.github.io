@@ -221,7 +221,7 @@ h2 a:visited {
   padding: 0 .4em;
 }
 
-.post ul, .post ol {
+.content ul, .content ol {
   margin-left: 1.35em;
 }
 
@@ -245,3 +245,11 @@ h2 a:visited {
 .post pre.terminal code {
   background-color: #333;
 }
+
+.badge {
+  background-color: #eef2a5;
+  color: black;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+ }

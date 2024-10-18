@@ -13,12 +13,23 @@ grouped by programming language.
 
 Languages:
 [C](#c),
+[Elvish](#elvish),
+[Go](#go),
 [Java](#java),
 [JavaScript](#javascript),
 [Perl](#perl),
 [Python](#python),
+[Ruby](#ruby),
 and
 [Others](#others).
+
+## <a id="python"></a> [Python](#python)
+
+- [tappy](https://pypi.python.org/pypi/tap.py) is a standalone program suited for use as a viewer; just pipe your TAP source to its standard input.
+
+## POSIX shell
+
+- [tapview](https://gitlab.com/esr/tapview) is another tiny standalone viewer, one portable shell file with zero dependencies, intended to be embedded in project test directories.
 
 ## <a id="c"></a> [C](#c)
 
@@ -40,6 +51,16 @@ written with YACC and Lex.
 **[tapto](https://github.com/katef/tapto)** is a TAP parser that formats
 results to XML and other formats.
 
+## <a id="elvish"></a> [Elvish](#elvish)
+
+**[elvish-tap](https://github.com/tesujimath/elvish-tap)** is a TAP producer
+and basic consumer for Elvish.
+
+## <a id="go"></a> [Go](#go)
+
+- [tap13](https://github.com/mpontillo/tap13/) is a TAP parser that translates
+input TAP into structs that can be used for further information processing.
+
 ## <a id="java"></a> [Java](#java)
 
 > Java is a general-purpose computer programming language that is concurrent,
@@ -48,7 +69,7 @@ results to XML and other formats.
 >
 > *From [Wikipedia](https://en.wikipedia.org/wiki/Java_%28programming_language%29)*
 
-**[tap4j](http://www.tap4j.org/)** is a full featured TAP library which
+**[tap4j](https://tupilabs.com/tap4j/tap4j/)** is a full featured TAP library which
 is integrated at the core of other Java projects like the
 [Jenkins TAP Plugin](https://wiki.jenkins-ci.org/display/JENKINS/TAP+Plugin).
 
@@ -70,9 +91,10 @@ is integrated at the core of other Java projects like the
 - [metatap](http://search.cpan.org/search?query=metatap)
 - [Tapper test infrastructure](http://tapper-testing.org)
 
-## <a id="python"></a> [Python](#python)
+## <a id="ruby"></a> [Ruby](#ruby)
 
-- [tappy](https://pypi.python.org/pypi/tap.py)
+- [ruby-tap-parser](https://github.com/vincent-psarga/ruby-tap-parser)
+
 
 ## <a id="others"></a> [Others](#others)
 
@@ -80,3 +102,4 @@ is integrated at the core of other Java projects like the
 - [Desktop notifications](https://github.com/ryandoyle/shouldertap)
 - Automake 1.13+ can [run TAP tests](https://www.gnu.org/software/automake/manual/html_node/Using-the-TAP-test-protocol.html#Using-the-TAP-test-protocol) for `make check`, via `tap-driver.sh`.
 - [Kyua](https://github.com/jmmv/kyua) Testing framework for infrastructure software.
+- Meson 0.50+ supports using TAP with its [`test` function](https://mesonbuild.com/Reference-manual_functions.html#test).

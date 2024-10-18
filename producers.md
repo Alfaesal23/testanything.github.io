@@ -16,11 +16,14 @@ Languages:
 [C++](#cplusplus),
 [C#](#csharp),
 [Common Lisp](#common-lisp),
+[Crystal](#crystal),
 [Elixir](#elixir),
+[Elvish](#elvish),
 [Erlang](#erlang),
 [Fish](#fish),
 [Forth](#forth),
 [Fortran](#fortran),
+[Gambas](#gambas),
 [Go](#go),
 [Haskell](#haskell),
 [Igor Pro](#igorpro),
@@ -68,6 +71,9 @@ for Ada which produces TAP 12 output.
 >
 > *From [Wikipedia](https://en.wikipedia.org/wiki/C_%28programming_language%29)*
 
+**[ArduinoTap](https://framagit.org/fperrad/ArduinoTap)** is a C/C++ port of the Perl5 module
+Test::More on Arduino.
+
 **[C TAP Harness](http://www.eyrie.org/~eagle/software/c-tap-harness/)** is a
 TAP library that implements much of the
 [Test::More](http://perldoc.perl.org/Test/More.html) API along with some C
@@ -82,6 +88,10 @@ Tests built with [GLib's test
 framework](https://developer.gnome.org/glib/stable/glib-Testing.html)
 produce TAP version 12 when run with the `--tap` option.
 
+**[KUnit](https://www.kernel.org/doc/html/latest/dev-tools/kunit/start.html)**
+is a unit testing framework for the Linux Kernel. Test output is written
+to the kernel log in TAP format.
+
 **[libtap](http://github.com/zorgnax/libtap)** is another TAP library that
 follows the [Test::More](http://perldoc.perl.org/Test/More.html) API.
 
@@ -89,12 +99,15 @@ follows the [Test::More](http://perldoc.perl.org/Test/More.html) API.
 producer for C. This library is different from the MyTAP producer for MySQL.
 See [SQL](#sql).
 
-**[shlmoifish libtap](http://www.shlomifish.org/open-source/projects/libtap/)** is a
-TAP version 12 producer for C. Discontinued in favor of libtap.
+**[Shlomi Fish's libtap](http://www.shlomifish.org/open-source/projects/libtap/)** is a
+TAP version 12 producer for C. Discontinued in favor of cmocka and libtap.
 
 The shlomifish libtap fork has
 **[a branch](https://github.com/shlomif/libtap/tree/cmake)** that replaces the
 Makefile with Cmake support.
+
+**[tap4embedded](https://framagit.org/fperrad/tap4embedded)** is a TAP producer
+library designed for C embedded.
 
 ## <a id="cplusplus"></a> [C++](#cplusplus)
 
@@ -117,6 +130,11 @@ embedded within `libperl++`. It is a mostly complete port of
 
 **[libtappp](https://github.com/cbab/libtappp)** is a fork of `libtap++`
 that removes the build time dependency to [Boost](http://www.boost.org/).
+
+**[QtTest](https://doc.qt.io/qt-6/qttest-index.html)** is the testing
+framework of [The Qt Project](https://www.qtproject.org/) and supports
+output in TAP format, by passing the `-tap` option on a test's
+command-line.
 
 ## [C# <a id="csharp"></a>](#csharp)
 
@@ -149,6 +167,11 @@ designed to provide a common interface for Unit testing output.
 Currently, it supports TAP version 12 and xUnit style output.
 It is available via [Quicklisp](http://www.quicklisp.org/).
 
+## <a id="crystal"></a> [Crystal](#crystal)
+
+**[crystal spec](https://crystal-lang.org/api/Spec.html)** the spec module
+that comes with Crystal's standard library includes a TAP formatter.
+
 ## <a id="elixir"></a> [Elixir](#elixir)
 
 > Elixir is a dynamic, functional language designed for building scalable
@@ -160,6 +183,21 @@ It is available via [Quicklisp](http://www.quicklisp.org/).
 generates TAP output for existing ExUnit test suites. Spout provides
 a simple way to generate TAP output without having to modify existing
 test code. Based on CTTAP.
+
+## <a id="elvish"></a> [Elvish](#elvish)
+
+> Elvish (noun):
+>
+> A powerful scripting language.
+>
+> A shell with useful interactive features built-in.
+>
+> A statically linked binary for Linux, BSDs, macOS or Windows.
+>
+> *From [elv.sh](https://elv.sh/)*
+
+**[elvish-tap](https://github.com/tesujimath/elvish-tap)** is a TAP producer
+and basic consumer for Elvish.
 
 ## <a id="erlang"></a> [Erlang](#erlang)
 
@@ -230,6 +268,16 @@ for Forth at an alpha level readiness.
 (standard 2008TS) with a minimal test harness implementing most of
 the [Test::More](http://perldoc.perl.org/Test/More.html) API.
 
+## <a id="gambas"></a> [Gambas](#gambas)
+
+> Gambas is an open source programming language and rapid application development system (RAD)
+> which empowers a programmer to create a great variety of programs:  From simple scripts and command line applications,
+> server daemons up to large GUI aplications in Gambas Basic under Linux.
+>
+> *From [gambaswiki.org](http://gambaswiki.org/)*
+
+**[gb.test](http://gambaswiki.org/wiki/comp/gb.test)** is a framework for unittesting which uses TAP as interface.
+
 ## <a id="go"></a> [Go](#go)
 
 > Go is an open source programming language that makes it easy to build
@@ -272,11 +320,11 @@ a test harness and can output its results in TAP format.
 >
 > *From [Wikipedia](https://en.wikipedia.org/wiki/Java_%28programming_language%29)*
 
-**[JTap](http://svn.solucorp.qc.ca/repos/solucorp/JTap/trunk/)**
+**[JTap](https://solucorp.solutions/repos/solucorp/JTap/trunk/)**
 is a TAP library that implements most of the
 [Test::More](http://perldoc.perl.org/Test/More.html) API.
 
-**[tap4j](http://www.tap4j.org/)** is a full featured TAP library which
+**[tap4j](https://tupilabs.com/tap4j/tap4j/)** is a full featured TAP library which
 is integrated at the core of other Java projects like the
 [Jenkins TAP Plugin](https://wiki.jenkins-ci.org/display/JENKINS/TAP+Plugin).
 
@@ -302,10 +350,15 @@ that runs on [Node.js][node] that has a TAP 'formatter'.
 **[Mocha](http://mochajs.org/)** is a [Node.js][node] and browser testing
 framework that has a [TAP reporter](http://mochajs.org/#tap).
 
-**[node-tap](https://github.com/isaacs/node-tap)** is a [Node.js][node]
-test framework and harness toolkit that produces and consumes the TAP format.
+[node]: https://nodejs.org
 
-**[Painless](https://github.com/taylorhakes/painless)** a modern, easy to use test library for node and browsers that has an optional TAP reporter.
+**[node](https://nodejs.org/docs/latest-v18.x/api/test.html#test-runner)** >= version 18 has an experimental *built-in* test runner which facilitates the creation of JavaScript tests that produce results in TAP format.
+
+**[node-tap](https://github.com/isaacs/node-tap)** <span
+class="badge">14</span> is a [Node.js][node] test framework and harness toolkit
+that produces and consumes the TAP format.
+
+**[Painless](https://github.com/taylorhakes/painless)** a modern, easy to use test library for [Node.js][node] and browsers that has an optional TAP reporter.
 
 **[qunit-tap](https://github.com/twada/qunit-tap)** is a TAP output producer
 plugin for [QUnit](http://qunitjs.com/).
@@ -319,9 +372,7 @@ the browsers and outputs TAP.
 **[Test.Simple](https://github.com/theory/test-simple-js)** is a TAP-emitting
 JavaScript test framework.
 
-**[zora](https://github.com/lorenzofox3/zora)** is a TAP producer with pure ES6 support for node.js and browsers without babel.
-
-[node]: https://nodejs.org/en/
+**[zora](https://github.com/lorenzofox3/zora)** is a TAP producer with pure ES6 support for [Node.js][node] and browsers without babel.
 
 ## <a id="limbo"></a> [Limbo (OS Inferno)](#limbo)
 
@@ -341,12 +392,15 @@ is a TAP producer that supports version 12.
 >
 > *From [lua.org](http://www.lua.org/about.html)*
 
-**[busted](http://olivinelabs.com/busted/)** is a unit testing framework
+**[busted](https://lunarmodules.github.io/busted/)** is a unit testing framework
 for Lua with a built-in TAP output handler.
 
 **[lua-TestMore](http://fperrad.github.io/lua-TestMore/)** is
 a port of the [Test::More](http://perldoc.perl.org/Test/More.html) framework
 to Lua.
+
+**[luatest](https://github.com/tarantool/luatest)** is
+a test framework written in Lua.
 
 ## <a id="matlab"></a> [MATLAB](#matlab)
 
@@ -394,6 +448,9 @@ framework for Omnis Studio.
 is a very easy-to-use, but powerful unit testing suite for Pascal
 (FreePascal, Turbo Pascal, et al), conforming to the TAP specification.
 
+**[pascal-tap](https://github.com/bbrtj/pascal-tap)**
+is a simple toolkit for producing TAP output written in Object Pascal (fpc).
+
 ## <a id="perl5"></a> [Perl5](#perl5)
 
 > Perl is a general-purpose programming language originally developed for
@@ -437,20 +494,9 @@ richer Perl library written to replace the old test suite.
 >
 > *From [php.net](https://secure.php.net/manual/en/intro-whatis.php)*
 
-**[Lens](http://lens.guide/)**
-is a PHP unit-testing framework with readable tests that catch everything.
-
 **[PHPUnit](http://www.phpunit.de/)** is a programmer-oriented testing
 framework for PHP. It is an instance of the xUnit architecture for unit
 testing frameworks and supports logging TAP.
-
-**[SimpleTest TAP reporter](http://digitalsandwich.com/Updated-Simpletest+Apache-Test/)**
-is a TAP producer for [SimpleTest](http://www.simpletest.org/).
-
-**[SnapTest](http://www.snaptest.net/)** is a powerful unit testing framework
-for PHP 5+, leveraging PHP's unique runtime language to simplify the unit
-test process without sacrificing the agility tests provide. It has a built-in
-TAP reporter.
 
 **[Test.php](http://search.cpan.org/dist/Test.php/Test.php)** is a TAP test
 framework for PHP with an interface like
@@ -549,7 +595,7 @@ configurable tool for writing clean and consistent
 **[bash-tap-functions](https://github.com/goozbach/bash-tap-functions)**
 is a TAP-producing Bash libary.
 
-**[Bats](http://github.com/sstephenson/bats)** is a TAP-compliant testing
+**[Bats](https://github.com/bats-core/bats-core)** is a TAP-compliant testing
 framework for Bash. It provides a simple way to verify that the UNIX programs
 you write behave as expected.
 
@@ -561,13 +607,23 @@ other test files for example code and use.
 library to write, run, and analyze automated tests for Unix programs.
 Since all tests output TAP, they can be run with any TAP harness.
 
+**[ShellSpec](https://github.com/shellspec/shellspec)** is a full-featured
+BDD unit testing framework for dash, bash, ksh, zsh and all POSIX shells,
+has a TAP formatter.
+
 **[Tapper-autoreport](https://github.com/tapper/Tapper-autoreport)**
 turns bash scripts into TAP test scripts.
+
+**[tap.sh](https://github.com/dnmfarrell/tap.sh)** is a minimalist
+POSIX-compliant shell library to write TAP tests.
 
 **[uze TAP](https://github.com/zsh-uze/devel-tap)** is a [zsh](http://www.zsh.org)
 library that provides helpers similar to the
 [Test2 suite](https://metacpan.org/release/Test2-Suite).
 This module is a part of the [uze](http://zsh-uze.github.io/) ecosystem.
+
+**[ZTAP](https://github.com/mattmc3/ztap)** is a TAP producer and test harness for
+[zsh](http://www.zsh.org).
 
 ## <a id="sql"></a> [SQL](#sql)
 
@@ -617,6 +673,12 @@ of high level testing.
 
 **[autotest](http://autotest.github.io/)** is a framework for fully automated
 testing with the ability to produce TAP reports.
+
+**[CMake](https://cmake.org/)** is an open-source, cross-platform family of
+tools designed to build, test and package software. CMake tests produce TAP
+output with option `-A`,
+[added](https://github.com/Kitware/CMake/commit/3f6ff4b5dba01f2f58dca75546ebefd0830110a5)
+since version 3.23.1.
 
 **[Xperior](https://github.com/Xyratex/xperior)** is a system for testing
 distributed filesystems. Xperior can output TAP test results.
